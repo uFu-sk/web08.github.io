@@ -1,0 +1,138 @@
+.pricing-table {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  width: 82%;
+  position: relative;
+  background-image: url("../img/hospital-room.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px 0;
+}
+
+.pricing-table::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.pricing-table > * {
+  position: relative;
+  z-index: 2;
+}
+
+.pricing-card {
+  width: 250px;
+  height: 550px;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 15px;
+}
+
+.pricing-card:hover {
+  background-color: #798e99;
+  color: #fff;
+}
+
+.pricing-card__header {
+  background-color: #2d588a;
+  color: white;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.pricing-card__header i {
+  font-size: 2rem;
+  margin-top: 10px;
+  display: block;
+}
+
+.pricing-card__price {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 15px 0;
+  color: #333;
+  background-color: #2d588a;
+  color: white;
+}
+
+.icon__dolar {1.8rem;
+  vertical-align: 9px;
+}
+
+.pricing-card__price p {
+  margin: 5px 0;
+}
+
+.pricing-card__price p:nth-child(2) {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.pricing-card__descripthion {
+  padding: 2px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.features {
+  list-style: none;
+  font-size: 
+  padding: 0;
+  margin: 0;
+}
+
+.features__item {
+  padding: 10px 0;
+  background-color: #f8f6f6;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+}
+
+.features__item_special {
+  font-weight: bold;
+  color: #2d588a;
+}
+
+.pricing-card__subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  background-color: #2d588a;
+  color: white;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .pricing-table {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .pricing-card {
+    padding: 20px;
+  }
+}
