@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="clinic, care, clinic care, cliniccare">
+    <meta name="description" content="Cliniccare — сучасний медичний центр із локаціями у різних регіонвх країни. Ми пропонуємо професійні послуги: кардіологія, дерматологія, гінекологія та інше. Запишіться на прийом!">
+    <title>Cliniccare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+     <link rel="shortcut icon" href="C:\Users\ASUS\Downloads/photo_2024-11-21_09-26-28.ico" />
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- Top Bar Section -->
+      <div class="header__top-bar">
+        <div class="header__location">
+          <div class="header__city-select">
+            <select id="city-select" class="header__city-dropdown">
+              <option value="Львів">Львів</option>
+              <option value="Київ">Київ</option>
+              <option value="Одеса">Одеса</option>
+              <option value="Дніпро">Дніпро</option>
+              <option value="Харків">Харків</option>
+            </select>
+            <img
+              src="./img/arrow.svg"
+              alt="Arrow icon"
+              class="header__arrow-icon"
+            />
+          </div>
+        </div>
+        <div class="header__contact-info">
+          <img
+            src="./img/telephone.png"
+            alt="Telephone icon"
+            class="header__icon"
+          />
+          <a href="tel:+38079341326" class="header__phone-link"
+            >+380 79 34 1326</a
+          >
+          <a href="contact.html"
+            ><button class="header__appointment-button">
+              Записатися на прийом
+            </button></a
+          >
+        </div>
+        <div class="header__icons">
+          <img src="./img/search.png" alt="Search icon" class="header__icon" />
+          <img
+            src="./img/icons.png"
+            alt="Social Media icons"
+            class="header__icon header__icon--social"
+          />
+          <img src="./img/Log in.png" alt="Log in icon" class="header__icon" />
+        </div>
+      </div>
+
+      <!-- Main Navigation Section -->
+      <nav class="header__nav">
+        <img src="./img/logo.png" alt="Cliniccare logo" class="header__logo" />
+        <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
+        <label for="menu-toggle" class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="index.html" class="header__menu-link"
+              >Про медичний центр</a
+            >
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Відділення</a>
+            <ul class="header__submenu">
+              <li><a href="#" class="header__submenu-link">Педіатрія</a></li>
+              <li><a href="#" class="header__submenu-link">Кардіологія</a></li>
+              <li><a href="#" class="header__submenu-link">Хірургія</a></li>
+            </ul>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Лікарі</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Медіа центр</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="price.html" class="header__menu-link">Ціни</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Акції</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="contact.html" class="header__menu-link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__image">
+        <img src="./img/banner.png" alt="Medical center" />
+      </div>
+    </header>
+
+    <main>
+      <section class="specialties">
+        <h1 class="specialties__title">
+          <img src="./img/2.png" alt="Clinic logo" class="specialties__icon" />
+          Медичний центр CLINICCARE у Львові
+        </h1>
+        <div class="specialties__grid">
+          <!-- Left Side: Image -->
+          <div class="specialties__image-container">
+            <img
+              src="./img/glasses.png"
+              alt="Doctor's consultation image"
+              class="specialties__image"
+            />
+          </div>
+
+          <!-- Right Side: Buttons -->
+          <div class="specialties__buttons-container">
+            <div class="specialties__button">Практологія</div>
+            <div class="specialties__button">Гінекологія</div>
+            <div class="specialties__button">Естетична допомога</div>
+            <div class="specialties__button">Кардіологія</div>
+            <div class="specialties__button">Дерматологія</div>
+            <div class="specialties__button">Травматологія</div>
+            <div class="specialties__button">Урологія</div>
+            <div class="specialties__button">Хірургія</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <h1 class="services__heading">
+          <img src="./img/2.png" alt="Telephone icon" class="services__icon" />
+          Напрямки роботи
+        </h1>
+        <div class="services__list">
+          <div class="services__item">
+            <i class="fas fa-ambulance services__icon"></i>
+            <h3 class="services__title">Невідкладна допомога</h3>
+            <p class="services__description">
+              Швидка медична допомога для екстрених ситуацій.
+            </p>
+          </div>
+          <div class="services__item">
+            <i class="fas fa-baby services__icon"></i>
+            <h3 class="services__title">Педіатрія</h3>
+            <p class="services__description">
+              Комплексна медична допомога дітям та підліткам.
+            </p>
+          </div>
+          <div class="services__item">
+            <i class="fas fa-heartbeat services__icon"></i>
+            <h3 class="services__title">Кардіологія</h3>
+            <p class="services__description">
+              Сучасні методи діагностики та лікування серцево-судинних
+              захворювань.
+            </p>
+          </div>
+          <div class="services__item">
+            <i class="fas fa-brain services__icon"></i>
+            <h3 class="services__title">Неврологія</h3>
+            <p class="services__description">
+              Професійна допомога у лікуванні захворювань нервової системи.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__image">
+          <img
+            src="img/about.png"
+            alt="About us image"
+            class="about__image-img"
+          />
+        </div>
+        <div class="about__content">
+          <h1 class="about__heading">
+            <img src="./img/2.png" alt="Icon" class="about__icon" />
+            Про нас
+          </h1>
+          <div class="about__text">
+            <p class="about__highlight">
+              CLINICCARE - це команда досвідчених медичних фахівців
+            </p>
+            <p class="about__description">
+              Присвячена наданню високоякісних медичних послуг. Ми віримо в
+              найкращий підхід до охорони здоров'я, який спрямований на
+              лікування всього організму, а не лише захворювання або симптомів.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="doctors">
+        <h1 class="doctors__heading">
+          <img src="./img/2.png" alt="Telephone icon" class="doctors__icon" />
+          Наші лікарі
+        </h1>
+        <div class="doctors__list">
+          <div class="doctors__item">
+            <div class="doctors__photo">
+              <img
+                src="./img/doc-1.jpg"
+                alt="Олександр Іванов"
+                class="doctors__photo-img"
+              />
+            </div>
+            <h3 class="doctors__name">Олександр Іванов</h3>
+            <p class="doctors__specialization">Кардіолог</p>
+            <p class="doctors__experience">Стаж: 15 років</p>
+          </div>
+          <div class="doctors__item">
+            <div class="doctors__photo">
+              <img
+                src="./img/doc-2.avif"
+                alt="Марія Петрова"
+                class="doctors__photo-img"
+              />
+            </div>
+            <h3 class="doctors__name">Марія Петрова</h3>
+            <p class="doctors__specialization">Невролог</p>
+            <p class="doctors__experience">Стаж: 10 років</p>
+          </div>
+          <div class="doctors__item">
+            <div class="doctors__photo">
+              <img
+                src="./img/doc-3.jpg"
+                alt="Дмитро Коваленко"
+                class="doctors__photo-img"
+              />
+            </div>
+            <h3 class="doctors__name">Дмитро Коваленко</h3>
+            <p class="doctors__specialization">Педіатр</p>
+            <p class="doctors__experience">Стаж: 8 років</p>
+          </div>
+          <div class="doctors__item">
+            <div class="doctors__photo">
+              <img
+                src="./img/doc-4.avif"
+                alt="Ірина Мельник"
+                class="doctors__photo-img"
+              />
+            </div>
+            <h3 class="doctors__name">Ірина Мельник</h3>
+            <p class="doctors__specialization">Терапевт</p>
+            <p class="doctors__experience">Стаж: 12 років</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <h1 class="reviews__heading">
+          <img src="./img/2.png" alt="Telephone icon" class="reviews__icon" />
+          Відгуки
+        </h1>
+        <div class="reviews__container">
+          <div class="reviews__item">
+            <div class="reviews__avatar">
+              <img src="img/1.jpg" alt="Відгук 1" class="reviews__avatar-img" />
+            </div>
+            <div class="reviews__content">
+              <p class="reviews__text">
+                Чудовий сервіс! Лікарі дуже професійні.
+              </p>
+              <div class="reviews__stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__avatar">
+              <img src="img/2.jpg" alt="Відгук 2" class="reviews__avatar-img" />
+            </div>
+            <div class="reviews__content">
+              <p class="reviews__text">Дуже вдячний за швидку допомогу!</p>
+              <div class="reviews__stars">★★★★☆</div>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__avatar">
+              <img
+                src="img/3.webp"
+                alt="Відгук 3"
+                class="reviews__avatar-img"
+              />
+            </div>
+            <div class="reviews__content">
+              <p class="reviews__text">Чудове обслуговування, рекомендую!</p>
+              <div class="reviews__stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="appointment">
+        <div class="appointment__container">
+          <!-- Left Side: Image -->
+          <div class="appointment__image">
+            <img
+              src="./img/doctor.png"
+              alt="Doctor image"
+              class="appointment__image-img"
+            />
+          </div>
+
+          <!-- Right Side: Text and Form -->
+          <div class="appointment__form-section">
+            <h2 class="appointment__heading">Записатися на прийом</h2>
+            <div class="appointment__form-container">
+              <form action="" class="appointment__form">
+                <input
+                  type="text"
+                  placeholder="Ім'я"
+                  class="appointment__input"
+                />
+                <input
+                  type="text"
+                  placeholder="Телефон"
+                  class="appointment__input"
+                />
+                <button type="submit" class="appointment__button">
+                  Відправити
+                </button>
+              </form>
+            </div>
+            <div class="appointment__contacts">
+              <p class="appointment__contacts-text">
+                Якщо ви не знайшли потрібну інформацію — зверніться до нас
+                зручним для вас способом:
+              </p>
+              <div class="appointment__contact-list">
+                <div class="appointment__contact-row">
+                  <p class="appointment__contact-label">Viber та телефон</p>
+                  <p class="appointment__contact-info">+380 79 34 1326</p>
+                </div>
+                <div class="appointment__contact-row">
+                  <p class="appointment__contact-label">Електронна пошта</p>
+                  <p class="appointment__contact-info">
+                    cliniccare.lviv@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h3 class="footer__heading">
+        <img src="./img/2.png" alt="Telephone icon" class="footer__icon" />
+        Контакти та інформація
+      </h3>
+      <div class="footer__details">
+        <div class="footer__location">
+          <p class="footer__address">
+            <i class="fas fa-map-marker-alt footer__icon"></i> пр. В. Чорновола,
+            45А/9
+          </p>
+          <p class="footer__schedule">
+            Час роботи:<br />
+            пн-сб 9:00 - 19:00<br />
+            нд 11:00 - 16:00<br />
+            Час роботи call-центру:<br />
+            пн-сб 8:00 - 21:00<br />
+            нд 11:00 - 16:00
+          </p>
+          <p class="footer__phone">
+            <i class="fas fa-phone footer__icon"></i> Телефон:<br />
+            (050) 245 00 00<br />
+            (068) 245 0000 (Viber)
+          </p>
+        </div>
+        <div class="footer__location">
+          <p class="footer__address">
+            <i class="fas fa-map-marker-alt footer__icon"></i> вул. Зубрівська,
+            21
+          </p>
+          <p class="footer__schedule">
+            Час роботи:<br />
+            пн-сб 9:00 - 19:00<br />
+            нд 11:00 - 16:00<br />
+            Час роботи call-центру:<br />
+            пн-сб 8:00 - 21:00<br />
+            нд 11:00 - 16:00
+          </p>
+          <p class="footer__phone">
+            <i class="fas fa-phone footer__icon"></i> Телефон:<br />
+            (050) 245 00 00<br />
+            (068) 245 0000 (Viber)
+          </p>
+        </div>
+        <div class="footer__location">
+          <p class="footer__address">
+            <i class="fas fa-map-marker-alt footer__icon"></i> вул. Раппапорта,
+            6
+          </p>
+          <p class="footer__schedule">
+            Графік:<br />
+            пн-пт: 8:00 - 20:00<br />
+            сб: 9:00 - 19:00<br />
+            Відділ. променевої діагностики сб: 9:00 - 20:00<br />
+            нд: 11:00 - 16:00<br />
+            Колцентр:<br />
+            пн-сб: 8:00 - 21:00<br />
+            нд: до 19:00
+          </p>
+          <p class="footer__phone">
+            <i class="fas fa-phone footer__icon"></i> Телефон:<br />
+            (050) 245 00 00<br />
+            (068) 245 0000 (Viber)
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

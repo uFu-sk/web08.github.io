@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cliniccare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/price.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+     <link rel="shortcut icon" href="C:\Users\ASUS\Downloads/photo_2024-11-21_09-26-28.ico" />
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- Top Bar Section -->
+      <div class="header__top-bar">
+        <div class="header__location">
+          <div class="header__city-select">
+            <select id="city-select" class="header__city-dropdown">
+              <option value="Львів">Львів</option>
+              <option value="Київ">Київ</option>
+              <option value="Одеса">Одеса</option>
+              <option value="Дніпро">Дніпро</option>
+              <option value="Харків">Харків</option>
+            </select>
+            <img
+              src="./img/arrow.svg"
+              alt="Arrow icon"
+              class="header__arrow-icon"
+            />
+          </div>
+        </div>
+        <div class="header__contact-info">
+          <img
+            src="./img/telephone.png"
+            alt="Telephone icon"
+            class="header__icon"
+          />
+          <a href="tel:+38079341326" class="header__phone-link"
+            >+380 79 34 1326</a
+          >
+          <a href="contact.html"
+            ><button class="header__appointment-button">
+              Записатися на прийом
+            </button></a
+          >
+        </div>
+        <div class="header__icons">
+          <img src="./img/search.png" alt="Search icon" class="header__icon" />
+          <img
+            src="./img/icons.png"
+            alt="Social Media icons"
+            class="header__icon header__icon--social"
+          />
+          <img src="./img/Log in.png" alt="Log in icon" class="header__icon" />
+        </div>
+      </div>
+
+      <!-- Main Navigation Section -->
+      <nav class="header__nav">
+        <img src="./img/logo.png" alt="Cliniccare logo" class="header__logo" />
+        <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
+        <label for="menu-toggle" class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="index.html" class="header__menu-link"
+              >Про медичний центр</a
+            >
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Відділення</a>
+            <ul class="header__submenu">
+              <li><a href="#" class="header__submenu-link">Педіатрія</a></li>
+              <li><a href="#" class="header__submenu-link">Кардіологія</a></li>
+              <li><a href="#" class="header__submenu-link">Хірургія</a></li>
+            </ul>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Лікарі</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Медіа центр</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="price.html" class="header__menu-link">Ціни</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Акції</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="contact.html" class="header__menu-link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__image">
+        <img src="./img/banner.png" alt="Medical center" />
+      </div>
+    </header>
+
+    <section class="pricing-table">
+      <div class="pricing-card">
+        <div class="pricing-card__header">
+          <h3 class="pricing-card__header_title">Здоровʼя</h3>
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+        <div class="pricing-card__price">
+          <p><span class="icon__dolar">₴</span>699.99</p>
+          <p>щомісячно</p>
+        </div>
+        <div class="pricing-card__descripthion">
+          <ul class="features">
+            <li class="features__item">
+              <span class="features__item_special"> 1 </span>консультація на
+              місяць
+            </li>
+            <li class="features__item">&#x2718;</li>
+            <li class="features__item">&#x2718;</li>
+            <li class="features__item">
+              <span class="features__item_special">5% </span>знижки на аналізи
+            </li>
+            <li class="features__item">
+              <span class="features__item_special">Найпростіший </span>щорічний
+              медогляд
+            </li>
+            <li class="features__item">Підтримка через чат</li>
+          </ul>
+        </div>
+        <button class="pricing-card__subscribe">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Придбати</p>
+        </button>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-card__header">
+          <h3 class="pricing-card__header_title">Здоровʼя+</h3>
+          <i class="fa-solid fa-cube"></i>
+        </div>
+        <div class="pricing-card__price">
+          <p><span class="icon__dolar">₴</span>999.99</p>
+          <p>щомісячно</p>
+        </div>
+        <div class="pricing-card__descripthion">
+          <ul class="features">
+            <li class="features__item">
+              <span class="features__item_special"> 3 </span>консультація на
+              місяць
+            </li>
+            <li class="features__item">Пріорітетний доступ</li>
+            <li class="features__item">Персоналізований план</li>
+            <li class="features__item">
+              <span class="features__item_special">10% </span>знижки на аналізи
+            </li>
+            <li class="features__item">
+              <span class="features__item_special">Базовий </span>щорічний
+              медогляд
+            </li>
+            <li class="features__item">Додаткова психологічна підтримка</li>
+          </ul>
+        </div>
+        <button class="pricing-card__subscribe">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Придбати</p>
+        </button>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-card__header">
+          <h3 class="pricing-card__header_title">Профілактика</h3>
+          <i class="fa-solid fa-cubes"></i>
+        </div>
+        <div class="pricing-card__price">
+          <p><span class="icon__dolar">₴</span>1399.99</p>
+          <p>щомісячно</p>
+        </div>
+        <div class="pricing-card__descripthion">
+          <ul class="features">
+            <li class="features__item">Безліміт</li>
+            <li class="features__item">Пріорітетний доступ</li>
+            <li class="features__item">Розширений план</li>
+            <li class="features__item">
+              <span class="features__item_special">15% </span>знижки на аналізи
+            </li>
+            <li class="features__item">
+              <span class="features__item_special">Повний </span>щорічний
+              медогляд
+            </li>
+            <li class="features__item">Відеоконсультації</li>
+          </ul>
+        </div>
+        <button class="pricing-card__subscribe">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Придбати</p>
+        </button>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-card__header">
+          <h3 class="pricing-card__header_title">Елітний догляд</h3>
+          <i class="fa-solid fa-user-tie"></i>
+        </div>
+        <div class="pricing-card__price">
+          <p><span class="icon__dolar">₴</span>1999.99</p>
+          <p>щомісячно</p>
+        </div>
+        <div class="pricing-card__descripthion">
+          <ul class="features">
+            <li class="features__item">Безліміт</li>
+            <li class="features__item">VIP-обслуговування</li>
+            <li class="features__item">Розширений план</li>
+            <li class="features__item">
+              <span class="features__item_special">20% </span>знижки на аналізи
+            </li>
+            <li class="features__item">
+              <span class="features__item_special">Розширений </span>щорічний
+              медогляд
+            </li>
+            <li class="features__item">Особистий менеджер</li>
+          </ul>
+        </div>
+        <button class="pricing-card__subscribe">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Придбати</p>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
